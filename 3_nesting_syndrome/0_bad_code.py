@@ -8,7 +8,7 @@ def process_user_data(user_data):
                             if 'address' in user_data:
                                 if 'city' in user_data['address']:
                                     # Further nested logic...
-                                    return "User data is valid."
+                                    return "User data is valid." 
                                 else:
                                     return "City is missing."
                             else:

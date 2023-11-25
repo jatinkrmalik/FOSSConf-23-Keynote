@@ -1,5 +1,3 @@
-# Is it really bad though? 
-
 class Book:
     def __init__(self, title, author, price):
         self.title = title
@@ -29,3 +27,5 @@ store.add_book(book)
 found_books = store.search_book_by_title("1984")
 store.process_payment(found_books[0], "Alice")
 store.deliver_book(found_books[0], "Alice")
+
+# Is it really bad though? 

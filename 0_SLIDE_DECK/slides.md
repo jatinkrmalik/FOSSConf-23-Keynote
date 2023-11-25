@@ -78,13 +78,13 @@ It's only natural we address **Naming Things in Code** first!
 
 ---
 
-These are the common pitfalls I see in the code often while reviewing:
+These are the **common pitfalls** I see in the code often while reviewing:
 
 ---
 
 `1_naming_things/0_bad_code.py`
 
-It seems to be failing a test case! Let's try to debug it? 
+It seems to be failing a test case! Let's try to **debug** it? 
 
 ---
 
@@ -98,26 +98,25 @@ We will talk more about this!
 
 In this `1_naming_things/2_good_code.py` version, each point is addressed:
 
-- **Avoid Single Letter Variable Names:** 
-  - Used descriptive names like `product`, `order`.
+- **Avoid Single Letter Variable Names:**  Used descriptive names like `product`, `order`.
 ^
-- **Don't Abbreviate Names:** 
-  - Avoided abbreviations like `pr`, used `price`, `name`.
+
+- **Don't Abbreviate Names:** Avoided abbreviations like `pr`, used `price`, `name`.
 ^
-- **Avoid Putting Types in Names:** 
-  - Removed type indications from variable names.
+
+- **Avoid Putting Types in Names:** Removed type indications from variable names.
 ^
-- **Include Units in Variable Names:** 
-  - Specified units in names like `tax_rate`.
+
+- **Include Units in Variable Names:** Specified units in names like `tax_rate`.
 ^
-- **Be Cautious with Naming Conventions:** 
-  - Used clear class names without unnecessary prefixes.
+
+- **Be Cautious with Naming Conventions:** Used clear class names without unnecessary prefixes.
 ^
-- **Rethink Naming if Struggling:** 
-  - Renamed `util_calc` to `calculate_order_total` for clarity.
+
+- **Rethink Naming if Struggling:** Renamed `util_calc` to `calculate_order_total` for clarity.
 ^
-- **Organize Code Logically:** 
-  - Organized functions and classes logically with clear responsibilities.
+
+- **Organize Code Logically:**  Organized functions and classes logically with clear responsibilities.
 
 ---
 
@@ -125,11 +124,11 @@ Remember, I said we will talk more about `1_naming_things/1_still_bad_code.py` a
 
 ^
 
-Let me take you on a stroll on how to NOT comment!
+Let me take you on a stroll on how to **NOT** comment!
 
 ---
 
-But first, tell me what's wrong with this code?
+But first, tell me **what's wrong** with this code?
 
 `2_comments/0_bad_code.py`
 
@@ -202,22 +201,19 @@ In the `3_nesting_syndrome/1_better_code.py` version, we addressed:
 - We use early returns to handle each validation check, which helps to avoid deep nesting.
 ^
 
-- All logic is kept within the process_user_data function, unlike the "Good Code" example where we extracted a separate validate_user_data function.
-^
-
-- This approach provides a balance between the deeply nested "Bad Code" and the more modular "Good Code," offering a simpler refactoring step that still significantly improves readability and maintainability.
+- All logic is kept within the process_user_data function offering a simpler refactoring step that still significantly improves readability and maintainability.
 
 ---
 
 But now, let's look at `3_nesting_syndrome/2_good_code.py` version, where we addressed:
 
-- We use a separate function validate_user_data to handle validations, reducing the depth of nesting.
+- We use a separate function `validate_user_data` to handle validations, reducing the depth of nesting.
 ^
 
 - We apply the principle of early returns (inversion) to handle error conditions upfront.
 ^
 
-- The process_user_data function becomes more focused and easier to understand, handling only the core processing logic.
+- The `process_user_data` function becomes more focused and easier to understand, handling only the core processing logic.
 
 ---
 
@@ -248,7 +244,7 @@ Let's see what it stands for:
 
 ---
 
-I am not here to bore you with theory, so let's see some hands on code! 
+I am not here to bore you with theory, so let's see **some hands on code**! 
 
 So, looking into `4_solid/0_bad_code.py` what do you see? 
 
@@ -292,10 +288,10 @@ But what's absolutely the best way to write it?
 - **Liskov Substitution Principle (LSP):** `OnlineBookStore` can use any subclass of `PaymentProcessor` and `DeliveryService` without knowing the specific type.
 ^
 
-- **Interface Segregation Principle (ISP):** Specific interfaces (`PaymentProcessor`, `DeliveryService`) are created, ensuring that classes don't depend on interfaces they don't use.
+- **Interface Segregation Principle (ISP):** Specific interfaces ( `PaymentProcessor`, `DeliveryService` ) are created, ensuring that classes don't depend on interfaces they don't use.
 ^
 
-- **Dependency Inversion Principle (DIP):** `OnlineBookStore` depends on abstractions (`BookRepository`, `PaymentProcessor`, `DeliveryService`) rather than concrete implementations.
+- **Dependency Inversion Principle (DIP):** `OnlineBookStore` depends on abstractions ( `BookRepository`, `PaymentProcessor`, `DeliveryService` ) rather than concrete implementations.
 
 
 ---
@@ -314,42 +310,55 @@ Can we say **better code** is actually **good enough**?
 
 # Premature Optimization 
 
-This is one of my favorite topics to talk about internally at work as well! 
+This is one of my **favorite topics** to talk about internally at work as well! 
 ^
 
-I even published an internal blog on same topic. I may publish it externally soon!
+I even published an internal blog on same topic. _I may publish it externally soon!_
 
 ---
 
-# Y.A.G.N.I. 
+-> # Y.A.G.N.I. <-
 
 ^
 
-You Ain't Gonna Need It!
+-> You Ain't Gonna Need It! <-
 
 ---
 
 # Premature Optimization 
 
-Often, discussions about performance optimization are premature and can distract from more important aspects of development! 
+Often discussions about performance optimization are premature and can distract from more important aspects of development! 
 
 Performance should be balanced with velocity (speed of adding new features) and adaptability (ease of changing the system to new requirements).
+
+---
+
+You should think of any project in the following scale: 
+
+- 0 -> 1 
+- 1 -> 10 
+- 10 -> 100
+- ... 
 
 ---
 
 There is a funny joke about this in Webdev community:
 ^
 
-> "If your website has a favicon, you have shipped it too late!"
+> "If your website has a favicon, you have shipped too late!"
 
 ---
 
-**Facebook** comes to my mind!
+-> **Facebook** also comes to my mind! <-
 
-The initial use of PHP for Facebook, despite its inefficiencies and criticism, was beneficial for rapid development. Performance issues were addressed later as they became significant.
+The initial use of PHP for Facebook, despite its inefficiencies and criticism, was beneficial for rapid development.
+Performance issues were addressed later as they became significant.
 
 ^ 
 And we saw a lot of open source tech that came out of Facebook ahem...Meta! 
+^
+
+-> **React, GraphQL, PyTorch, Cassandra** to name a few! <- 
 
 ---
 
@@ -363,27 +372,32 @@ Let's look at some code:
 
 ---
 
-> I often see candidates an interview for forgetting the original scope of the question! This is very critical! 
+> I often see candidates an interview forgetting the original scope of the question and then go on to make something super complex! 
+^
+
+> The database incident(popular language q) is a perfect example of this!
 
 ---
 
-Let's see some more examples on how minor optimizations can be insignificant in the broader context of application performance! 
+Let's see some more examples on how **minor optimizations** can be _insignificant_ in the broader context of application performance! 
 
 ---
 
 `5_yagni/2_optimized.py` 
 
-> a set is used to find unique numbers in a list. While using a set is efficient for this purpose, if the primary goal is readability or the list is not large enough to warrant optimization, this approach might be overkill.
+> a set is used to find unique numbers in a list. While using a set is _efficient_ for this purpose, if the primary goal is readability or the list is not large enough to warrant optimization, this approach might be **overkill**.
 
 ---
 
 `5_yagni/3_balanced.py` 
 
-> the function is simplified by directly converting the list to a set and back to a list. This approach is more readable and still maintains efficiency for most practical purposes.
+> the function is simplified by directly converting the list to a set and back to a list. This approach is more **readable** and still **maintains efficiency** for most practical purposes.
 
 ---
 
-> The key takeaway is that while optimizations can be beneficial, they should be applied judiciously and in context. Over-optimizing can lead to code that is harder to read and maintain without providing significant performance benefits.
+> The key takeaway is that while _optimizations can be beneficial_, they should be applied **judiciously** and **in context**. 
+>
+> Over-optimizing can lead to code that is **harder to read and maintain** without providing _significant performance benefits_.
 
 ---
 
@@ -478,22 +492,26 @@ Who is a **Principal Engineer** btw?
 
 ^
 
-`0_SLIDE_DECK/principal_engineer.gif`
+0_SLIDE_DECK/principal_engineer.gif
 
 
 ---
 
 # In all seriousness: 
 
-- Delayed gratification! 
+- **Delayed** gratification! 
 ^
-- Context switching to 101%
+
+- Context switching to **101%**.
 ^
-- Coding is no longer a priority, but I still (try to) code. 
+
+- Coding is **no longer** a priority, but I still (try to) code. 
 ^
-- Meetings galore! 
+
+- **Meetings** galore! 
 ^
-- Becoming comfortable with uncertainty.
+
+- Becoming comfortable with **uncertainty**.
 
 ---
 
