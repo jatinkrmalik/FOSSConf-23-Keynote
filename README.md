@@ -1,5 +1,7 @@
-# README for #FOSSConf23 Keynote Tech Talk by Jatin K Malik
+# `#FOSSConf23` Keynote Tech Talk by Jatin K Malik
 All the sample code used for tech talk "Elevate Your Code // Practical Insights for 10X Impact" in [FOSSConf New Delhi 2023](https://web.archive.org/web/20231111195115/https://conference.fosscu.org/). 
+
+![FOSSConf23](https://conference.fosscu.org/_astro/fossconf.1e4115da_tdPBB.svg)
 
 This talk, presented by [@jatinkrmalik](https://twitter.com/jatinkrmalik), is designed to enhance your coding skills and provide practical insights into various aspects of software development. The focus was on Python, but the concepts are largely language agnostic.
 
