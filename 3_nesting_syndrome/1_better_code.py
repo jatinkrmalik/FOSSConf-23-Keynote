@@ -1,5 +1,6 @@
 def process_user_data(user_data):
     if user_data is None:
+        # do something else as well!
         return "No user data provided."
     if 'name' not in user_data:
         return "Name is missing."

@@ -23,6 +23,9 @@ class OnlineBookStore:
 # Usage
 store = OnlineBookStore()
 book = Book("1984", "George Orwell", 20)
+if book is None:
+    return False
+    
 store.add_book(book)
 found_books = store.search_book_by_title("1984")
 store.process_payment(found_books[0], "Alice")

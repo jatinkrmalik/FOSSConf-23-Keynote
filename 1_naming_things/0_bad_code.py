@@ -22,7 +22,7 @@ def util_calc(p, q, t, s):
 def test():
     prod = p("Widget", 20.0)
     ord = o(prod, 3, 0.05, 5.0)
-    assert ord.calc() == 60.0, "err"
+    assert ord.calc() == 68.0, "err"
     assert util_calc(prod, 5, 0.05, 5.0) == 70.0, "err"
     print("Pass!")
 

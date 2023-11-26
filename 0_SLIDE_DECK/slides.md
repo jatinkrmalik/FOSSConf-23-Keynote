@@ -31,13 +31,27 @@ One of the best ways to set yourself apart from the crowd is to **contribute to 
 Welcome to a session where we will try to **elevate our coding** skills together!
 ^
 
-This is going to be mostly hands-on code. I assume most of us here are **developers**, so I will try to keep it as **technical** as possible. 
+This is going to be mostly hands-on code. I assume most of us here are **developers**, so I will try to keep it as **technical** as possible.
 ^
+---
+
+Actually, let's do a **quick census** with a show of hands? 
+^
+
+- How many of you are **students**?
+^
+
+- How many of you are **working professionals**?
+^
+
+- How many of you are **actively pushing** code? Raised a PR in last 2 weeks? 
+
+---
 
 > Language of choice is **Python**, but the concepts are language agnostic! 
 ^
 
-> Feel free to interrupt me and ask question, but I may chose to park them for later, if we are running out of time.
+> Feel free to **interrupt** me with a **raise of hand** and ask question, but I may chose to park them for later, _if we are running out of time!_
 
 ---
 
@@ -58,7 +72,38 @@ This is going to be mostly hands-on code. I assume most of us here are **develop
 
 ---
 
-Let's dive in!
+-> So, what is a **10x Engineer**? <-
+
+^
+
+-> `0_SLIDE_DECK/real_programmers.png` <-
+
+---
+
+-> A 10X engineer is someone who consistently delivers **10 times more value** than their peers. <-
+
+-> They're **not just technically skilled**; they're also problem solvers, innovators, and leaders. <-
+
+-> They can see the **big picture** and understand the **complex relationships** between different systems. <- 
+
+-> They're also able to think creatively and come up with new and better ways of doing things that **scale well**. <-
+
+---
+
+So, clearly, it's not just about **writing code**! 
+^
+
+It about ensuring the code you produce can actually **scoped**, **extend**, **scale**, **collaborated upon** and **well documented**.
+
+---
+
+-> # Remember, you can not scale **without** a team! <-
+
+---
+
+Let's try to address some of these points today! 
+
+We will start with the **basics** and then move on to more **advanced topics** based on time and interest! 
 
 ---
 
@@ -506,15 +551,30 @@ Your job evolves from writing code to **designing scalable systems**!
 
 -> **Paging** <-
 ^
+
 -> **Virtual Memory** <-
 ^
+
 -> **Cache** (L1 vs L2) <-
 ^
+
 -> **Disk I/O** <-
 ^
+
 -> **IPC (Inter-Process Communication)** <-
 ^
+
 -> **Networking** (OSI model?) <-
+
+---
+
+The things we talked about today are just the **tip of the iceberg**! 
+^
+
+But, even if you are able to incorporate some of these in your daily coding, you will be **10x** in no time!
+^
+
+Also, this will help you a lot while **interviewing**! One of the most low hanging fruits to put yourself as an awesome **potential team mate**. 
 
 ---
 

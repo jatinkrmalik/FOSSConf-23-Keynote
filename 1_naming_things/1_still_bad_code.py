@@ -6,10 +6,10 @@ class p: # Product
 
 class o: # Order
     def __init__(i, p, q, t, s):
-        i.p = p  # price
+        i.p = p  # product
         i.q = q  # quantity
-        i.t = t  # tax rate
-        i.s = s  # shipping cost
+        i.t = t  # discount
+        i.s = s  # super discount
 
     def calc(i):
         c = i.p.pr * i.q # total cost
