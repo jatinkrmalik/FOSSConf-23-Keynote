@@ -21,6 +21,13 @@
 
 ---
 
+I really appreciate what you folks at **FOSSCU** are trying to do! 
+^
+
+One of the best ways to set yourself apart from the crowd is to **contribute to open source**. 
+
+---
+
 Welcome to a session where we will try to **elevate our coding** skills together!
 ^
 
@@ -450,7 +457,7 @@ Which one is a better approach?
 
 ---
 
-> In practice, a balance between DRY and WET principles is often the best approach. Over-applying DRY can lead to premature abstraction, while too much WET can lead to a codebase that's hard to maintain and update.
+> In practice, a **balance** between DRY and WET principles is often the best approach. Over-applying DRY can lead to **premature abstraction**, while too much WET can lead to a codebase that's **hard to maintain** and update.
 
 ---
 
@@ -482,9 +489,34 @@ Let's see a demo!
 
 ^
 
-Well, the answers is in your Kitchen! Hear me out! 
+
+-> Well, the answers is in your Kitchen! Hear me out! <-
 
 --- 
+
+Now who can tell me the difference b/w **Multi-Threading** & **Multi-Processing**?
+
+---
+
+It's very crucial to know the key underlying hardware concepts as when you grow ranks in your SWE journey, these things start to matter a lot!
+
+Your job evolves from writing code to **designing scalable systems**!
+
+---
+
+-> **Paging** <-
+^
+-> **Virtual Memory** <-
+^
+-> **Cache** (L1 vs L2) <-
+^
+-> **Disk I/O** <-
+^
+-> **IPC (Inter-Process Communication)** <-
+^
+-> **Networking** (OSI model?) <-
+
+---
 
 # Outro
 
